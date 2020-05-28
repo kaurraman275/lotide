@@ -18,9 +18,9 @@ const assertEqual = function (actual, expected) {
 };
 
 const head = function (arr) {
-    return arr[0];
+    return  _.tail(arr[1,2]);
 }
 
 
-assertEqual(head([5,6,7]), 5); //it should pass the test case now, write 3 more test case (total two passing, two failing) then you will know you function is corr
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
+assertEqual(head([5,6,7]), 6,7); //it should pass the test case now, write 3 more test case (total two passing, two failing) then you will know you function is corr
+assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Lighthouse" , "Labs");
